@@ -51,13 +51,13 @@ jobs:
       uses: kolpav/purge-artifacts-action@v1
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        expire-in: 1w # Source:https://github.com/kolpav/purge-artifacts-action
+        expire-in: 10d # Source:https://github.com/kolpav/purge-artifacts-action
     - name: Cleanup Workflow Runs
-      uses: ActionsRML/delete-workflow-runs@v1.2.1
+      uses: Mattraks/delete-workflow-runs@main
       with:
         token: ${{ github.token }}
         repository: ${{ github.repository }}
-        retain_days: 10
+        retain_days: 12
         #keep_minimum_runs: 6
     - name: Prepare Mixedwrt
       run: |
