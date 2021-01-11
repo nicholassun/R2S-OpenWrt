@@ -19,7 +19,7 @@ jobs:
     
     steps:
     - name: Clone Repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@main
     - name: Show CPU Model and Free Space
       run: |
         echo -e "Total CPU cores\t: $(nproc)"
@@ -48,7 +48,7 @@ jobs:
         git config --global user.name 'GitHub Actions' && git config --global user.email 'noreply@github.com'
         df -h
     - name: Cleanup Old Action Artifacts
-      uses: kolpav/purge-artifacts-action@v1
+      uses: kolpav/purge-artifacts-action@master
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         expire-in: 10d # Source:https://github.com/kolpav/purge-artifacts-action
@@ -112,7 +112,7 @@ jobs:
     - name: Print Disk Space After
       run: df -h
     - name: Upload Firmwares
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@main
       with:
         name: R2S-OpenWrt
         path: openwrt/bin/targets/rockchip/armv8/
