@@ -275,8 +275,8 @@ rm -rf ./package/lean/luci-app-ssr-plus/po/zh_Hans
 # Add Extra Proxy Ports and Change Lists
 pushd package/lean/luci-app-ssr-plus/root/etc/init.d
 sed -i 's/143/143,25,5222/' shadowsocksr
-sed -i 's,https://cdn.jsdelivr.net/gh/YW5vbnltb3Vz/domain-list-community@release/gfwlist.txt,https://cdn.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/gfw.txt,' shadowsocksr
-sed -i 's,https://ispip.clang.cn/all_cn.txt,https://cdn.jsdelivr.net/gh/QiuSimons/Chnroute@master/dist/chnroute/chnroute.txt,' shadowsocksr
+sed -i 's,ispip.clang.cn/all_cn.txt,cdn.jsdelivr.net/gh/QiuSimons/Chnroute/dist/chnroute/chnroute.txt,' shadowsocksr
+sed -i 's,YW5vbnltb3Vz/domain-list-community@release/gfwlist.txt,v2ray-rules-dat@release/gfw.txt,' shadowsocksr
 popd
 #rm -rf ./package/lean/luci-app-ssr-plus/root/etc/init.d/shadowsocksr
 #wget -P package/lean/luci-app-ssr-plus/root/etc/init.d https://raw.githubusercontent.com/nicksun98/Others/master/luci-app-ssr-plus-177-1/root/etc/init.d/shadowsocksr
@@ -413,7 +413,9 @@ unset MY_Var
 #rm -f ./package/feeds/packages/frp
 #git clone --depth 1 https://github.com/lwz322/luci-app-frps.git package/lean/luci-app-frps
 #git clone --depth 1 https://github.com/kuoruan/luci-app-frpc.git package/lean/luci-app-frpc
-#svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/frp package/feeds/packages/frp
+#svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-frps package/lean/luci-app-frps
+#svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-frpc package/lean/luci-app-frpc
+#svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/frp package/lean/frp
 # Oray
 #svn co https://github.com/teasiu/dragino2/trunk/package/teasiu/luci-app-phtunnel package/new/luci-app-phtunnel
 #svn co https://github.com/teasiu/dragino2/trunk/package/teasiu/luci-app-oray package/new/luci-app-oray
@@ -458,7 +460,5 @@ sed -i 's/16384/65535/g' package/kernel/linux/files/sysctl-nf-conntrack.conf
 rm -rf .config
 # Import configs to files
 #cp -rf ../PATCH/R2S/files ./files
-# Files permissions 755
-chmod -R 755 ./
 
 exit 0
