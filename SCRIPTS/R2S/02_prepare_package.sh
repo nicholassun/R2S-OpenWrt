@@ -276,8 +276,8 @@ rm -rf ./package/lean/luci-app-ssr-plus/po/zh_Hans
 # Add Extra Proxy Ports and Change Lists
 pushd package/lean/luci-app-ssr-plus/root/etc/init.d
 sed -i 's/143/143,25,5222/' shadowsocksr
-sed -i 's,ispip.clang.cn/all_cn.txt,cdn.jsdelivr.net/gh/QiuSimons/Chnroute/dist/chnroute/chnroute.txt,' shadowsocksr
-sed -i 's,YW5vbnltb3Vz/domain-list-community@release/gfwlist.txt,v2ray-rules-dat@release/gfw.txt,' shadowsocksr
+sed -i 's,ispip.clang.cn/all_cn,cdn.jsdelivr.net/gh/QiuSimons/Chnroute/dist/chnroute/chnroute,' shadowsocksr
+sed -i 's,YW5vbnltb3Vz/domain-list-community@release/gfwlist,Loyalsoldier/v2ray-rules-dat@release/gfw,' shadowsocksr
 popd
 #rm -rf ./package/lean/luci-app-ssr-plus/root/etc/init.d/shadowsocksr
 #wget -P package/lean/luci-app-ssr-plus/root/etc/init.d https://raw.githubusercontent.com/nicksun98/Others/master/luci-app-ssr-plus-177-1/root/etc/init.d/shadowsocksr
@@ -377,6 +377,12 @@ svn co https://github.com/openwrt/packages/trunk/utils/usbutils feeds/packages/u
 ln -sf ../../../feeds/packages/utils/usbutils ./package/feeds/packages/usbutils
 svn co https://github.com/openwrt/packages/trunk/utils/hwdata feeds/packages/utils/hwdata
 ln -sf ../../../feeds/packages/utils/hwdata ./package/feeds/packages/hwdata
+rm -rf ./feeds/packages/net/dnsdist
+svn co https://github.com/openwrt/packages/trunk/net/dnsdist feeds/packages/net/dnsdist
+svn co https://github.com/openwrt/packages/trunk/libs/h2o feeds/packages/libs/h2o
+ln -sf ../../../feeds/packages/libs/h2o ./package/feeds/packages/h2o
+svn co https://github.com/openwrt/packages/trunk/libs/libwslay feeds/packages/libs/libwslay
+ln -sf ../../../feeds/packages/libs/libwslay ./package/feeds/packages/libwslay
 # Addition-Trans-zh-master
 cp -rf ../PATCH/duplicate/addition-trans-zh-r2s ./package/lean/lean-translate
 # Addition-Trans-zh-master from QiuSimons with individuation changes
