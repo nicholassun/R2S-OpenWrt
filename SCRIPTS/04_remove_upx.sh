@@ -1,5 +1,5 @@
 #!/bin/bash
-# [CTCGFW]Project-OpenWrt
+# [CTCGFW]Immortalwrt
 # Use it under GPLv3, please.
 # --------------------------------------------------------
 # Remove upx commands
