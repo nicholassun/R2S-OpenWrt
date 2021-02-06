@@ -57,7 +57,7 @@ uci del dhcp.@dnsmasq[0].rebind_protection='1'
 uci commit dhcp
 ```
 
-![](/Screenshots/newversion.jpeg)
+![](/Screenshots/main.jpeg)
 
 ## Thanks to all friends in NanoPi R2S Club
 
