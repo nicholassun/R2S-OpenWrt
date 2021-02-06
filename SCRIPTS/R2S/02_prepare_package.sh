@@ -197,10 +197,11 @@ ln -sf ../../../feeds/packages/lang/python/python-pynacl ./package/feeds/package
 #patch -p1 < ../PATCH/new/package/luci-app-freq.patch
 # JD-DailyBonus
 git clone --depth 1 https://github.com/jerrykuku/node-request.git package/new/node-request
-#git clone --depth 1 https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/new/luci-app-jd-dailybonus
-git clone -b develop --depth 1 https://github.com/Promix953/luci-app-jd-dailybonus.git package/new/luci-app-jd-dailybonus
+git clone --depth 1 https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/new/luci-app-jd-dailybonus
+#git clone -b develop --depth 1 https://github.com/Promix953/luci-app-jd-dailybonus.git package/new/luci-app-jd-dailybonus
 # Arpbind
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-arpbind package/lean/luci-app-arpbind
+svn co https://github.com/nicksun98/OpenWrt_luci-app/trunk/lean/luci-app-arpbind package/lean/luci-app-arpbind
+#svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-arpbind package/lean/luci-app-arpbind
 # Adbyby
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-adbyby-plus package/lean/luci-app-adbyby-plus
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/adbyby package/lean/adbyby
@@ -336,7 +337,8 @@ svn co https://github.com/fw876/helloworld/trunk/naiveproxy package/lean/naivepr
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-uugamebooster package/lean/luci-app-uugamebooster
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/uugamebooster package/lean/uugamebooster
 # Ram-free
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-ramfree package/lean/luci-app-ramfree
+svn co https://github.com/nicksun98/OpenWrt_luci-app/trunk/lean/luci-app-ramfree package/lean/luci-app-ramfree
+#svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-ramfree package/lean/luci-app-ramfree
 # USB-Printer
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-usb-printer package/lean/luci-app-usb-printer
 # Wrtbwmon
