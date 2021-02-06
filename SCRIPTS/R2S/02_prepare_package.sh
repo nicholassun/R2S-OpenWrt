@@ -241,6 +241,7 @@ ln -sf ../../../feeds/packages/utils/stress-ng ./package/feeds/packages/stress-n
 # UnblockNeteaseMusic
 #git clone --depth 1 https://github.com/immortalwrt/luci-app-unblockneteasemusic.git package/new/UnblockNeteaseMusic
 # Autoreboot
+svn co https://github.com/nicksun98/OpenWrt_luci-app/trunk/lean/luci-app-autoreboot package/lean/luci-app-autoreboot
 #svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/luci-app-autoreboot package/lean/luci-app-autoreboot
 # Moschinadns
 #svn co https://github.com/QiuSimons/openwrt-packages/branches/main/mos-chinadns package/new/mos-chinadns
