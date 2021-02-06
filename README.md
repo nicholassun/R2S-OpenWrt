@@ -22,15 +22,15 @@ or running
 
 ### Version Informations:
 
-The Latest Edition of Snapshot （The day of the latest action）
+The Latest Edition of Snapshot OpenWrt（The day of the latest build）
 
-LuCI version：LuCI 19.07 or LuCI master
+LuCI version：LuCI master
 
 Doge contains JD-DailyBonus
 
-Nil contains nothing
+[BingBing](https://weibo.com/u/6512991534) contains nothing
 
-NoService as it is
+Null means "No Services"
 
 ### Feature：
 
@@ -42,7 +42,9 @@ NoService as it is
 
 4.Fullcone NAT supported
 
-5.Remove IPv6 as default
+5.Port some old softwares for the LuCI master by [msylgj](https://github.com/msylgj)
+
+6.Remove IPv6 by default
 
   * If you do need IPv6
 
