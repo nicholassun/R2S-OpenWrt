@@ -13,13 +13,6 @@ Password：None
 
 ~~Swap the ethernet ports of lan wan~~
 
-If cannnot run JD-Dailybonus manually, follow up [issue/120](https://github.com/jerrykuku/luci-app-jd-dailybonus/issues/120)
-
-or running
-```
-/usr/share/jd-dailybonus/newapp.sh -w
-```
-
 ### Version Informations:
 
 The Latest Edition of Snapshot OpenWrt（The day of the latest build）
